@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Registration Confirmed</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #eaf2f8;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .confirmation-box {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #002244;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 2rem;
+      text-decoration: none;
+      color: #fff;
+      background: #002244;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="confirmation-box">
+    <h2>Thank You for Registering!</h2>
+    <p id="confirmation-msg"></p>
+    <a href="home.html">Back to Home</a>
+  </div>
+
+  <script>
+    const fullName = sessionStorage.getItem("fullName");
+    const course = sessionStorage.getItem("course");
+
+    document.getElementById("confirmation-msg").textContent =
+      `${fullName}, you have successfully registered for the ${course} course at ABC College.`;
+  </script>
+</body>
+</html>

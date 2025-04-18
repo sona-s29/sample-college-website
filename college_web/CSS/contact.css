@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #1d5995;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #001f3f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.contact-header {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact-header h1 {
+    font-size: 48px;
+}
+
+.contact-header p {
+    font-size: 18px;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contact-form {
+    background: #fefefe;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-form h2 {
+    margin-bottom: 15px;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    background: orange;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.map {
+    background: #ddd;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.map-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.map-link a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.map-link a:hover {
+    background-color: #cc7000;
+}
+
+
+.info-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-card {
+    background: #fefefe;
+    color: #000;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.info-card i {
+    font-size: 20px;
+
+}
+
+.call-us {
+    background: #fefefe;
+    color: #000;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+.call-us button {
+    background: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.address-bar {
+    background: #fefefe;
+    color: #000;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.faq {
+    background: #fefefe;
+    color: #000;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 1000px;
+}
+
+.faq h2 {
+    margin-bottom: 20px;
+}
+
+.faq ul {
+    list-style: disc inside;
+}
+
+/* Footer */
+.footer {
+    background-color: #001f3f;
+    color: white;
+    padding: 3rem 1rem 1rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.footer-col h4,
+.footer-col h3 {
+    margin-bottom: 1rem;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-col ul li a {
+    color: #ffffffcc;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #ffffff33;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    color: #ffffffaa;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.social-icons a {
+    color: white;
+    background: #ff5722;
+    padding: 0.6rem;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+    font-size: 1rem;
+}
+
+.social-icons a:hover {
+    background: #e64a19;
+}
